@@ -115,6 +115,7 @@ button {
   width: 100%;
   padding-bottom: 3rem;
   color: white;
+  border-radius: 0px;
 }
 
 .input-colors-section {
@@ -122,16 +123,20 @@ button {
   width: 100%;
   padding-bottom: 3rem;
   color: white;
+  border-radius: 0px;
 
   div {
     display: flex;
     justify-content: center;
     gap: 2rem;
-
+    
+    div {
+      border: 1px solid lightgray;
+    }
   }
 
   input {
-    border: 1px solid #efefef;
+    border: 1px solid lightgray;
   }
 }
 
