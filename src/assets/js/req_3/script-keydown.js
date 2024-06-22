@@ -36,7 +36,7 @@ inputColorChange.addEventListener('keydown', event => {
 
 // For compatibility on mobile devices
 inputColorChange.addEventListener('input', event => {
-  switch (event.data) {
+  switch (event.data.toLowerCase()) {
     case 'a':
       color = 'pink'
       keyContainer.style.backgroundColor = color;
