@@ -3,6 +3,7 @@ const keyContainer = document.querySelector('#key');
 const keyContainer2 = document.querySelector('#key2');
 var color = '' //Variable global
 
+keyContainer2.style.display = 'none'
 inputColorChange.addEventListener('keydown', event => {
   switch (event.key) {
     case 'a':
@@ -20,14 +21,17 @@ inputColorChange.addEventListener('keydown', event => {
     case 'q':
       color = 'purple'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     case 'w':
       color = 'gray'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     case 'e':
       color = 'brown'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     default:
       break;
@@ -52,14 +56,17 @@ inputColorChange.addEventListener('input', event => {
     case 'q':
       color = 'purple'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     case 'w':
       color = 'gray'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     case 'e':
       color = 'brown'
       keyContainer2.style.backgroundColor = color;
+      keyContainer2.style.display = 'block'
       break;
     default:
       break;

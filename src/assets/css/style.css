@@ -128,7 +128,7 @@ button {
   div {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 10px;
     
     div {
       border: 1px solid lightgray;
@@ -154,8 +154,8 @@ button {
 
 .keys div {
   background-color: white;
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
 }
 
 @media screen and (width > 578px) {
@@ -167,5 +167,11 @@ button {
   #container-colors {
     display: grid;
     grid-template-columns: repeat(2, 200px);
+  }
+
+  .keys div {
+    background-color: white;
+    width: 200px;
+    height: 200px;
   }
 }
