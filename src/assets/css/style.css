@@ -166,6 +166,7 @@ button {
 
   #container-colors {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(2, 200px);
   }
 
