@@ -22,6 +22,7 @@ main {
   flex-direction: column;
   gap: 10px;
   margin: 0;
+  width: 100%;
 }
 
 img {
@@ -57,6 +58,22 @@ button {
   cursor: pointer;
 }
 
+#main-title {
+  color: dodgerblue;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  div {
+    max-width: 200px;
+  }
+}
+
 #ele1 {
   width: 300px;
   height: 300px;
@@ -66,13 +83,13 @@ button {
 }
 
 #container-colors {
-  display: grid;
-  grid-template-columns: repeat(2, 200px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   div {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
   }
 
@@ -134,4 +151,16 @@ button {
   background-color: white;
   width: 200px;
   height: 200px;
+}
+
+@media screen and (width > 578px) {
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #container-colors {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+  }
 }
